@@ -24,13 +24,13 @@ git clone https://github.com/AFP17/HangmanInCPP.git
 ```
 cd HangmanInCPP
 ```
-3. Compile the ProjectYou can compile the project manually using the following commands:
+3. Compile the Project
 ```
 g++ -c main.cpp -o main.o
 g++ -c hangman_functions.cpp -o hangman_functions.o
 g++ main.o hangman_functions.o -o hangman
 ```
-4. Run the ApplicationAfter compiling, you can start the game by running:
+4. Run the Application
 ```
 ./hangman
 ```
