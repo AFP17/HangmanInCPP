@@ -1,44 +1,43 @@
-# HangmanInCPP
+# Hangman Game in C++
 
-This repository hosts the source code for a Hangman game implemented in C++. The game is a popular word-guessing game where the player tries to figure out a hidden word by guessing letters. If the player guesses too many incorrect letters, the hangman gets "hanged," and the game ends. This implementation is structured across three main files to organize functionality and provide a clear separation of logic and interface.
+This repository contains a classic Hangman game implemented in C++. Hangman is a word-guessing game where players try to figure out an unknown word by guessing letters. For each incorrect guess, a part of the hangman is drawn. The goal is to guess the word before the hangman is fully drawn.
 
 # File Structure
-- main.cpp: Contains the main game loop and is responsible for interacting with the user.
-- hangman_fonctions.h: Header file declaring all functions used for the Hangman game logic.
-- hangman_fonctions.cpp: Implementation of the functions declared in hangman_fonctions.h. This includes logic for choosing a word, checking guesses, and updating the game state.
+The project consists of the following files:
+
+- main.cpp: The entry point of the game that handles the game loop and user interactions.
+- hangman_functions.cpp: Contains the logic for the game's core functionalities, such as processing guesses and updating the game state.
+- hangman_functions.h: Header file for declaring functions and including libraries needed by hangman_functions.cpp.
+
+# Getting Started
+These instructions will guide you through setting up the project on your local machine for development and testing purposes.
+
+# Prerequisites
+You need a C++ compiler that supports C++17. GCC or Clang are recommended. Ensure you have Git installed to clone the repository.
 
 # Installation
 1. Clone the Repository
 ```
 git clone https://github.com/AFP17/HangmanInCPP.git
 ```
-2. Navigate to the Project Directory
+2. Go to the folder
 ```
 cd HangmanInCPP
 ```
-3. Compile the Project
+3. Compile the ProjectYou can compile the project manually using the following commands:
+```
+g++ -c main.cpp -o main.o
+g++ -c hangman_functions.cpp -o hangman_functions.o
+g++ main.o hangman_functions.o -o hangman
+```
+4. Run the ApplicationAfter compiling, you can start the game by running:
+```
+./hangman
+```
 
-g++ -std=c++17 -o Hangman main.cpp hangman_fonctions.cpp
+# Usage
+To play the game, run the executable and follow the on-screen instructions. The game will prompt you to guess letters to try and figure out the hidden word.
 
-Run the Application
-bash
-Copy code
-./Hangman
-Usage
-Start the game by running the executable. The game will prompt you to guess letters to try and figure out the hidden word. Input your guesses according to the prompts.
-
-Contributing
-Contributions are welcome, and any improvements or suggestions are greatly appreciated.
-
-Fork the project.
-Create your feature branch (git checkout -b feature/CoolFeature).
-Commit your changes (git commit -m 'Add some CoolFeature').
-Push to the branch (git push origin feature/CoolFeature).
-Open a pull request.
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-Acknowledgments
-Hat tip to anyone whose code was used.
-Inspiration.
-etc.
+# Acknowledgments
+- Inspiration from classic hangman games.
+- This was made possible thanks to Coding Cleverly tutorial on Youtube. 

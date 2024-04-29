@@ -6,7 +6,7 @@ int main()
 {
   greet();
 
-  string codeword = "HelloWorld";
+  string codeword = "helloworld";
   string answer = "__________";
   int misses = 0;
   vector<char> incorrect;
